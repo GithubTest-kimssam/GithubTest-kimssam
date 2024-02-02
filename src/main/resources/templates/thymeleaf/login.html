@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko" 
+	xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout}">
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+	<div layout:fragment="content" class="content content1">
+		<h1>파라미터 전달받음</h1>
+		<div th:text="${param1}"></div>
+		<div th:text="${param2}"></div>
+	</div>
+</body>
+</html>

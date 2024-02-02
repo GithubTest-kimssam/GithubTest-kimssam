@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- 레이아웃 기능을 사용하기 위해 html태그에 layout 네임스페이스를 추가한다. -->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<div th:replace="fragments/head::head"></div>
+</head>
+<body>
+	<div th:replace="fragments/header::header"></div>
+	<div th:replace="fragments/sidebar::sidebar"></div>
+	
+	<!-- 페이지 레이아웃에서 다른 내용으로 계속 변경되는 영역을 설정 -->
+	<div layout:fragment="content"></div>
+	
+	<div th:replace="fragments/footer::footer"></div>
+</body>
+</html>
